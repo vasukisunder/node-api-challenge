@@ -40,13 +40,29 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Routing - express helps you with routing different url endpoints to different request handlers. This helps make the app more streamlined and organized by splitting it into smaller parts (like different components of a React app). You can break the app up into routers and have one router serve the API, and another serve the single page application.
+
+Middleware - (described below)
+
 - [ ] Describe Middleware?
+
+Express allows you to use middleware functions in your request handlers. Middleware functions are basically functions that can get access to the request and response objects and use them to validate data, log changes for improved understanding and functionality, or provide security in your application. Middleware can also change the request/response data if needed or trigger actions.  
+
 
 - [ ] Describe a Resource?
 
+A resource is a fundamental part of a ‘RESTful API.’  It is an object that contains information with a type, data, relationships to other resources, and methods. 
+
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+API status response codes help clients know whether their request was successful or not. For example, a 201 request means a resource was created, a 400 is used for a bad request, 401 means the request was unauthorized, etc. 
+
+
 - [ ] How can we partition our application into sub-applications?
+
+Express routers help you split your app into sub-applications and reorganize the modules into a more readable and structured format. You can add endpoints to the main file that handle which router to default to depending on the url being visited. 
+
 
 ## Minimum Viable Product
 
